@@ -8,7 +8,7 @@ function Contacts() {
   const [copied, setCopied] = useState(false);
   const email = "ale.berg.93@gmail.com";
 
-  useTitle("Portfolio || Contatti");
+  useTitle("Portfolio || Contacts");
 
   async function handleCopy() {
     try {
@@ -16,7 +16,7 @@ function Contacts() {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      console.error("Copia fallita", err);
+      console.error("Copy failed", err);
     }
   }
 
@@ -45,7 +45,7 @@ function Contacts() {
           <span>{email}</span>
           <Copy className="h-6 w-6" />
           {copied && (
-            <span className="ml-2 text-sm text-green-600">Copiato!</span>
+            <span className="ml-2 text-sm text-green-600">Copied!</span>
           )}
         </button>
       </div>

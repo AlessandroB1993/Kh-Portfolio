@@ -9,16 +9,16 @@ import NodeJsIcon from "../assets/nodedotjs.svg?react";
 import { useTitle } from "../customHooks/useTitle";
 
 function Skills() {
-  useTitle("Portfolio || Abilità");
+  useTitle("Portfolio || Skills");
 
   return (
     <section className="mx-auto max-w-[83rem] p-2">
       <h1 className="border-b-[1px] border-orange-400 pb-2 text-center font-kingdom1 text-3xl">
-        Abilità apprese
+        Skills Acquired
       </h1>
 
       <div className="grid grid-cols-[22rem_38rem] gap-7 2xl:grid-cols-[25rem_1fr]">
-        <div className="ml-auto mr-3 mt-[30%] h-[65%] min-w-[15rem] max-w-[19rem]">
+        <div className="ml-auto mr-3 mt-[30%] h-[68%] min-w-[15rem] max-w-[19rem]">
           <h2 className="mx-4 mb-4 border-b-[1px] border-b-orange-300 pb-1 text-center font-kingdom1">
             Soft Skills
           </h2>
@@ -28,42 +28,42 @@ function Skills() {
                 Problem Solving
               </h3>
               <p className="px-3 pt-1 text-xs italic">
-                Trovare soluzioni pratiche a problemi complessi.
+                Finding practical solutions to complex problems.
               </p>
             </li>
             <li>
               <h3 className="mt-1 py-1 text-center text-sm font-bold text-orange-200">
-                Autonomia
+                Self-Management
               </h3>
               <p className="px-3 text-xs italic">
-                Ho imparato a organizzare il mio tempo e il mio apprendimento in
-                modo efficace.
+                I’ve learned to organize my time and my learning process
+                effectively.
               </p>
             </li>
             <li>
               <h3 className="mt-1 py-1 text-center text-sm font-bold text-orange-200">
-                Curiosità
+                Curiosity
               </h3>
               <p className="px-3 text-xs italic">
-                Non mi fermo al “funziona”, voglio capire perché funziona.
+                I don't stop at "it works", I want to understand why it works.
               </p>
             </li>
             <li>
               <h3 className="mt-1 py-1 text-center text-sm font-bold text-orange-200">
-                Adattabilità
+                Adaptability
               </h3>
               <p className="px-3 text-xs italic">
-                Imparo in fretta e mi adatto a nuovi ambienti, linguaggi o
-                strumenti.
+                I learn quickly and adapt easily to new environments, languages,
+                or tools.
               </p>
             </li>
             <li>
               <h3 className="mt-1 py-1 text-center text-sm font-bold text-orange-200">
-                Comunicazione
+                Communication
               </h3>
               <p className="px-3 text-xs italic">
-                So spiegare concetti tecnici in modo semplice, e sono sempre
-                aperto al confronto.
+                I'm able to explain technical concepts in simple terms and I’m
+                always open to feedback.
               </p>
             </li>
           </ul>
@@ -101,7 +101,7 @@ function Skills() {
 
           <div className="max-w-[670px]">
             <h2 className="text-center font-kingdom1 text-xl tracking-wider">
-              Prossimamente...
+              Soon...
             </h2>
 
             <div className="mx-auto flex max-w-[620px] items-center justify-between">

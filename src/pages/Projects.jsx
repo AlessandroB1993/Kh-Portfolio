@@ -2,12 +2,12 @@ import { useTitle } from "../customHooks/useTitle";
 import ProjectCard from "../ui/ProjectCard";
 
 function Projects() {
-  useTitle("Portfolio || Progetti");
+  useTitle("Portfolio || Projects");
 
   return (
     <div className="mx-auto flex max-w-[100rem] flex-col">
       <h1 className="mx-12 border-b-[1px] border-orange-400 pb-2 text-center font-kingdom1 text-3xl">
-        Progetti completati
+        Finished Projects
       </h1>
 
       <ul className="mx-auto mt-16 grid min-w-[70%] max-w-[90%] grid-cols-2 gap-x-7 gap-y-6 overflow-auto lg:gap-y-8 2xl:max-w-[85%] 2xl:grid-cols-3 2xl:gap-x-11">
@@ -18,8 +18,8 @@ function Projects() {
             techs={["React", "React Query", "Supabase"]}
             href="https://the-wild-oasis-aleberg.netlify.app/"
           >
-            App per lo staff di un B&B: gestisci i bookings, effettua check-in e
-            check-out, aggiungi camere, registrare nuovi membri dello staff.
+            An app for B&B staff to manage bookings, check guests in and out,
+            add rooms, and register new team members.
           </ProjectCard>
         </li>
 
@@ -30,8 +30,8 @@ function Projects() {
             techs={["React", "Next.js", "SSR"]}
             href="https://the-wild-oasis-website-three-black.vercel.app/"
           >
-            Sito di un B&B dove con autenticazione effettuata puoi vedere camere
-            disponibili, prenotarle e modificare il profilo.
+            A B&B website where, once authenticated, users can view available
+            rooms, make reservations, and edit their profile.
           </ProjectCard>
         </li>
 
@@ -42,8 +42,8 @@ function Projects() {
             techs={["Javascript"]}
             href="https://forkify-alessandrob.netlify.app/"
           >
-            Single Page Application per cercare ricette, aggiungerne di nuove e
-            salvare le tue preferite.
+            A single page application to search for recipes, add new ones, and
+            save your favorites.
           </ProjectCard>
         </li>
 
@@ -54,9 +54,8 @@ function Projects() {
             techs={["React", "React Router"]}
             href="https://worldwise-aleberg.netlify.app/"
           >
-            Effettua il login e utilizza una mappa interattiva per aggiungere
-            tappe visitate, lascia un commento e dai vita a una lista di paesi
-            visitati.
+            Log in and click on an interactive map to mark places you've
+            visited, leave comments, and keep track of visited countries.
           </ProjectCard>
         </li>
       </ul>

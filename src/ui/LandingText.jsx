@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const text = "Pronto a esplorare?";
+const text = "Are you ready to explore?";
 
 function LandingText() {
   const [displayedText, setDisplayedText] = useState("");
@@ -17,8 +17,8 @@ function LandingText() {
   // }, []);
 
   useEffect(() => {
-    const delay = 650; // delay iniziale
-    const typingSpeed = 50; // velocità typing
+    const delay = 650; // delay
+    const typingSpeed = 50; // typing speed
 
     const timeout = setTimeout(
       () => {
@@ -28,7 +28,7 @@ function LandingText() {
         }
       },
       index === 0 ? delay : typingSpeed,
-    ); // solo il primo ha il delay
+    ); // only the first hads a delay
 
     return () => clearTimeout(timeout);
   }, [index]);

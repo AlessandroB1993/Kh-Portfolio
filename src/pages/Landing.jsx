@@ -7,7 +7,7 @@ import { useTitle } from "../customHooks/useTitle";
 
 function Landing() {
   const { clickSound } = useAudio();
-  useTitle("Portfolio || Benvenuto");
+  useTitle("Portfolio || Welcome");
 
   return (
     <div className="relative flex h-screen w-screen items-center justify-center overflow-hidden bg-black">
@@ -28,7 +28,7 @@ function Landing() {
             className="link peer z-20 mt-6 bg-black"
             to="/about"
           >
-            Entra
+            Enter
           </Link>
           <span className="absolute left-0 top-1/2 mt-3 h-[2px] w-1/2 origin-left translate-y-[-50%] scale-x-0 bg-orange-400 transition-transform duration-300 peer-hover:scale-x-100"></span>
           <span className="absolute right-0 top-1/2 mt-3 h-[2px] w-1/2 origin-right translate-y-[-50%] scale-x-0 bg-orange-400 transition-transform duration-300 peer-hover:scale-x-100"></span>
@@ -36,7 +36,7 @@ function Landing() {
       </div>
 
       <p className="absolute bottom-2 right-2 text-xs">
-        Realizzato con React & passione. &copy; 2025 Alessandro Bergamo
+        Made with React & passion. &copy; 2025 Alessandro Bergamo
       </p>
     </div>
   );

@@ -4,11 +4,11 @@ import NavLink from "./CustomNavLink";
 import { useAudio } from "../contexts/AudioContext";
 
 const pages = [
-  "Chi sono-/about",
-  "Formazione-/education",
-  "Progetti-/projects",
-  "Abilità-/skills",
-  "Contatti-/contacts",
+  "About-/about",
+  "Education-/education",
+  "Projects-/projects",
+  "Skills-/skills",
+  "Contacts-/contacts",
 ];
 
 function SideBar() {
