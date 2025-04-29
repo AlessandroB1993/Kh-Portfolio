@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "KHMenu";
+  src: url("src/assets/fonts/KHMenu.otf") format("truetype");
+  font-weight: "normal";
+  font-style: "normal";
+}
+
+@layer base {
+  html {
+    @apply text-gray-200;
+    @apply bg-black;
+  }
+
+  body {
+    @apply font-inter;
+  }
+}
+
+@layer components {
+  .link {
+    @apply flex h-[3.2rem] w-[16rem] items-center justify-center rounded-[2rem] border-4 border-blue-800 font-kingdom1 text-xl font-normal tracking-wide text-white transition-all delay-100 duration-300 ease-in-out hover:w-[16.8rem] hover:border-orange-400 hover:text-2xl hover:shadow-[0px_0px_10px] hover:shadow-orange-400;
+  }
+
+  .nav-link {
+    @apply flex h-[3.2rem] w-[13.2rem] items-center justify-center rounded-[2rem] border-4 border-blue-800 font-kingdom1 text-xl font-normal tracking-wide text-white transition-all duration-300 ease-in-out hover:border-orange-400 hover:shadow-[0px_0px_10px] hover:shadow-orange-400;
+  }
+
+  .nav-link-active {
+    @apply h-[3.3rem] w-[13.8rem] border-orange-400 text-[1.45rem] shadow-[0px_0px_10px] shadow-orange-400;
+  }
+
+  .image-container {
+    width: 320px;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    clip-path: ellipse(38% 42% at 50% 45%);
+    will-change: clip-path;
+    animation: morph 12s infinite alternate ease-in-out;
+  }
+
+  .progress-bar {
+    width: 0;
+    animation: fillBar 2s ease-in-out forwards;
+  }
+
+  .progress-bar-incomplete {
+    width: 0;
+    animation: fillBarMini 2s ease-in-out forwards;
+  }
+
+  .spinner {
+    margin: 4.8rem auto;
+    width: 6.4rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    background:
+      radial-gradient(farthest-side, #368ee0 94%, #0000) top / 10px 10px
+        no-repeat,
+      conic-gradient(#0000 30%, #368ee0);
+
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      #0000 calc(100% - 10px),
+      #000 0
+    );
+    mask: radial-gradient(farthest-side, #0000 calc(100% - 10px), #000 0);
+
+    animation: rotate 1.5s infinite linear;
+  }
+
+  .spinner-mini {
+    margin: 4.8rem auto;
+    width: 3.4rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    background:
+      radial-gradient(farthest-side, #368ee0 94%, #0000) top / 10px 10px
+        no-repeat,
+      conic-gradient(#0000 30%, #368ee0);
+
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      #0000 calc(100% - 10px),
+      #000 0
+    );
+    mask: radial-gradient(farthest-side, #0000 calc(100% - 10px), #000 0);
+
+    animation: rotate 1.5s infinite linear;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  @keyframes morph {
+    0% {
+      clip-path: ellipse(38% 42% at 50% 45%);
+    }
+    50% {
+      clip-path: ellipse(41% 41% at 51% 48%);
+    }
+    100% {
+      clip-path: ellipse(38% 42% at 50% 45%);
+    }
+  }
+
+  @keyframes fillBar {
+    from {
+      width: 0;
+    }
+    to {
+      width: 620px;
+    }
+  }
+
+  @keyframes fillBarMini {
+    from {
+      width: 0;
+    }
+    to {
+      width: 62px;
+    }
+  }
+}
